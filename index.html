@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>ISS Location App</title>
+
+      <!-- css  -->
+      <link rel="stylesheet" href="style.css" />
+
+      <!-- js  -->
+      <script src="https://unpkg.com/vue@next"></script>
+      <script src="/app.js" defer></script>
    </head>
-   <body></body>
+   <body>
+      <div id="app">
+         <h1>ISS Location</h1>
+
+         <p>
+            ISS ID : <span> {{id}} </span><br />
+            Latitude : <span>{{lat}}</span><br />
+            Longitude : <span>{{lon}}</span><br />
+         </p>
+
+         <p>Results : <span>{{results}}</span></p>
+
+         <!-- <button @click="getISS">Update Data</button> -->
+
+         <!-- <button @click="loadUsers">Load Users</button>
+         <div v-if="users">{{ users }}</div> -->
+      </div>
+   </body>
 </html>
